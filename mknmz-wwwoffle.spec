@@ -10,6 +10,7 @@ BuildRequires:	autoconf
 #Requires:	perl >= 5.6.0, perl-File-MMagic >= 1.12, perl-NKF >= 1.70
 #Requires:	kakasi >= 2.3.0, perl-Text-Kakasi >= 1.00
 Source0:	http://www.naney.org/comp/distrib/mknmz-wwwoffle/archive/%{name}-%{version}.tar.gz
+# Source0-md5:	9258fa92d31d4894e898e61805d48d04
 URL:		http://www.naney.org/comp/distrib/mknmz-wwwoffle/index.html
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
