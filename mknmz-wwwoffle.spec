@@ -3,7 +3,7 @@ Summary:	Performs full-text search over the cache created by WWWOFFLE
 Summary(pl):	Pe³notekstowe przeszukiwanie cache utworzonego przez WWWOFFLE
 Name:		mknmz-wwwoffle
 Version:	0.7.2
-Release:	3
+Release:	4
 License:	GPL
 Group:		Applications/Text
 Source0:	http://www.naney.org/comp/distrib/mknmz-wwwoffle/archive/%{name}-%{version}.tar.gz
