@@ -4,6 +4,7 @@ Version:	0.7.2
 Release:	1
 License:	GPL
 Group:		Applications/Text
+BuildRequires:	autoconf
 #BuildRequires:	perl >= 5.6.0, perl-NKF >= 1.70, perl-Text-Kakasi >= 1.00
 #Requires:	perl >= 5.6.0, perl-File-MMagic >= 1.12, perl-NKF >= 1.70
 #Requires:	kakasi >= 2.3.0, perl-Text-Kakasi >= 1.00
@@ -46,7 +47,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README README.ja NEWS THANKS INSTALL ChangeLog AUTHORS
+%doc README NEWS THANKS INSTALL ChangeLog AUTHORS
+%lang(ja) %doc README.ja
 %dir %{_localstatedir}
 %attr(755,root,root) %{_bindir}/mknmz-wwwoffle
 %{_mandir}/man1/*
