@@ -3,7 +3,7 @@ Summary:	Performs full-text search over the cache created by WWWOFFLE
 Summary(pl):	Pe³notekstowe przeszukiwanie cache utworzonego przez WWWOFFLE
 Name:		mknmz-wwwoffle
 Version:	0.7.2
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Text
 Source0:	http://www.naney.org/comp/distrib/mknmz-wwwoffle/archive/%{name}-%{version}.tar.gz
@@ -11,7 +11,9 @@ Source0:	http://www.naney.org/comp/distrib/mknmz-wwwoffle/archive/%{name}-%{vers
 URL:		http://www.naney.org/comp/distrib/mknmz-wwwoffle/index.html
 BuildRequires:	autoconf
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	perl-DB_File
 Requires:	namazu
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
