@@ -1,4 +1,5 @@
 Summary:	Performs full-text search over the cache created by WWWOFFLE
+Summary(pl):	Przeprowadza pe³notekstowe przeszukiwanie cache utworzonego przez WWWOFFLE
 Name:		mknmz-wwwoffle
 Version:	0.7.2
 Release:	1
@@ -23,7 +24,7 @@ generate index files for cache entries in wwwoffle.
 
 %description -l pl
 mknmz-wwwoffle przeprowadza pe³notekstowe przeszukiwanie cache
-stworzonego przez wwwoffle, u¿ywaj±c systemu przeszukiwania
+utworzonego przez wwwoffle, u¿ywaj±c systemu przeszukiwania
 pe³notekstowego Namazu (http://www.namazu.org/). mknmz-wwwoffle dodaje
 filtr dla mknmz, który jest u¿ywany do generowania plików indeksowych
 dla cache z wwwoffle.
