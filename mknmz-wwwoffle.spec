@@ -1,21 +1,18 @@
+%include	/usr/lib/rpm/macros.perl
 Summary:	Performs full-text search over the cache created by WWWOFFLE
-Summary(pl):	Przeprowadza pe³notekstowe przeszukiwanie cache utworzonego przez WWWOFFLE
+Summary(pl):	Pe³notekstowe przeszukiwanie cache utworzonego przez WWWOFFLE
 Name:		mknmz-wwwoffle
 Version:	0.7.2
 Release:	1
 License:	GPL
 Group:		Applications/Text
-BuildRequires:	autoconf
-#BuildRequires:	perl >= 5.6.0, perl-NKF >= 1.70, perl-Text-Kakasi >= 1.00
-#Requires:	perl >= 5.6.0, perl-File-MMagic >= 1.12, perl-NKF >= 1.70
-#Requires:	kakasi >= 2.3.0, perl-Text-Kakasi >= 1.00
 Source0:	http://www.naney.org/comp/distrib/mknmz-wwwoffle/archive/%{name}-%{version}.tar.gz
 # Source0-md5:	9258fa92d31d4894e898e61805d48d04
 URL:		http://www.naney.org/comp/distrib/mknmz-wwwoffle/index.html
+BuildRequires:	autoconf
+BuildRequires:	rpm-perlprov >= 4.1-13
+Requires:	namazu
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
-# XXX is this right - it was /var/lib before FHS macros
-%define _localstatedir	/var/cache/wwwoffle/search/namazu
 
 %description
 nknmz-wwwoffle performs full-text search over the cache created by
@@ -42,16 +39,16 @@ dla cache z wwwoffle.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README NEWS THANKS INSTALL ChangeLog AUTHORS
+%doc AUTHORS ChangeLog NEWS README THANKS
 %lang(ja) %doc README.ja
-%dir %{_localstatedir}
 %attr(755,root,root) %{_bindir}/mknmz-wwwoffle
 %{_mandir}/man1/*
 %{_datadir}/namazu/filter/*
