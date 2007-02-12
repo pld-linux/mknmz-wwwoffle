@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	Performs full-text search over the cache created by WWWOFFLE
-Summary(pl):	Pe≥notekstowe przeszukiwanie cache utworzonego przez WWWOFFLE
+Summary(pl.UTF-8):   Pe≈Çnotekstowe przeszukiwanie cache utworzonego przez WWWOFFLE
 Name:		mknmz-wwwoffle
 Version:	0.7.2
 Release:	4
@@ -23,11 +23,11 @@ wwwoffle, using full-text search system Namazu
 (http://www.namazu.org/). It adds a filter for mknmz which is used to
 generate index files for cache entries in wwwoffle.
 
-%description -l pl
-mknmz-wwwoffle przeprowadza pe≥notekstowe przeszukiwanie cache
-utworzonego przez wwwoffle, uøywaj±c systemu przeszukiwania
-pe≥notekstowego Namazu (http://www.namazu.org/). mknmz-wwwoffle dodaje
-filtr dla mknmz, ktÛry jest uøywany do generowania plikÛw indeksowych
+%description -l pl.UTF-8
+mknmz-wwwoffle przeprowadza pe≈Çnotekstowe przeszukiwanie cache
+utworzonego przez wwwoffle, u≈ºywajƒÖc systemu przeszukiwania
+pe≈Çnotekstowego Namazu (http://www.namazu.org/). mknmz-wwwoffle dodaje
+filtr dla mknmz, kt√≥ry jest u≈ºywany do generowania plik√≥w indeksowych
 dla cache z wwwoffle.
 
 %prep
