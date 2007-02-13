@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	Performs full-text search over the cache created by WWWOFFLE
-Summary(pl.UTF-8):   Pełnotekstowe przeszukiwanie cache utworzonego przez WWWOFFLE
+Summary(pl.UTF-8):	Pełnotekstowe przeszukiwanie cache utworzonego przez WWWOFFLE
 Name:		mknmz-wwwoffle
 Version:	0.7.2
 Release:	4
